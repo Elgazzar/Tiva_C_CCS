@@ -7,10 +7,10 @@
       "path": "Button_Driver"
     },
     {
-      "path": "Communication_Manger_Challange-master"
+      "path": "GPIO"
     },
     {
-      "path": "GPIO"
+      "path": "CAN"
     }
   ],
   "settings": {},
