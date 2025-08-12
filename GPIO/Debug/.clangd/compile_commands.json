@@ -1,0 +1,32 @@
+[
+   {
+      "directory" : "D:/Tiva_C_CCS/GPIO/Debug",
+      "command"   : "clang++ -I\"D:/Tiva_C_CCS/GPIO\" -I\"C:/ti/TivaWare_C_Series-2.2.0.295\" -I\"C:/ti/ti-cgt-arm_18.12.2.LTS/include\" -I\"D:/Tiva_C_CCS/GPIO/Headers\" -I\"D:/Tiva_C_CCS/GPIO/Headers/Det\" -I\"D:/Tiva_C_CCS/GPIO/Headers/DIO\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -xc",
+      "file"      : "D:/Tiva_C_CCS/GPIO/DIO/DIO.c"
+   },
+   {
+      "directory" : "D:/Tiva_C_CCS/GPIO/Debug",
+      "command"   : "clang++ -I\"D:/Tiva_C_CCS/GPIO\" -I\"C:/ti/TivaWare_C_Series-2.2.0.295\" -I\"C:/ti/ti-cgt-arm_18.12.2.LTS/include\" -I\"D:/Tiva_C_CCS/GPIO/Headers\" -I\"D:/Tiva_C_CCS/GPIO/Headers/Det\" -I\"D:/Tiva_C_CCS/GPIO/Headers/DIO\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -xc",
+      "file"      : "D:/Tiva_C_CCS/GPIO/DIO/Dio_Lcfg.c"
+   },
+   {
+      "directory" : "D:/Tiva_C_CCS/GPIO/Debug",
+      "command"   : "clang++ -I\"D:/Tiva_C_CCS/GPIO\" -I\"C:/ti/TivaWare_C_Series-2.2.0.295\" -I\"C:/ti/ti-cgt-arm_18.12.2.LTS/include\" -I\"D:/Tiva_C_CCS/GPIO/Headers\" -I\"D:/Tiva_C_CCS/GPIO/Headers/Det\" -I\"D:/Tiva_C_CCS/GPIO/Headers/DIO\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -xc",
+      "file"      : "D:/Tiva_C_CCS/GPIO/Switch_Driver/src/Switch_Driver.c"
+   },
+   {
+      "directory" : "D:/Tiva_C_CCS/GPIO/Debug",
+      "command"   : "clang++ -I\"D:/Tiva_C_CCS/GPIO\" -I\"C:/ti/TivaWare_C_Series-2.2.0.295\" -I\"C:/ti/ti-cgt-arm_18.12.2.LTS/include\" -I\"D:/Tiva_C_CCS/GPIO/Headers\" -I\"D:/Tiva_C_CCS/GPIO/Headers/Det\" -I\"D:/Tiva_C_CCS/GPIO/Headers/DIO\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -xc",
+      "file"      : "D:/Tiva_C_CCS/GPIO/main.c"
+   },
+   {
+      "directory" : "D:/Tiva_C_CCS/GPIO/Debug",
+      "command"   : "clang++ -I\"D:/Tiva_C_CCS/GPIO\" -I\"C:/ti/TivaWare_C_Series-2.2.0.295\" -I\"C:/ti/ti-cgt-arm_18.12.2.LTS/include\" -I\"D:/Tiva_C_CCS/GPIO/Headers\" -I\"D:/Tiva_C_CCS/GPIO/Headers/Det\" -I\"D:/Tiva_C_CCS/GPIO/Headers/DIO\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -xc",
+      "file"      : "D:/Tiva_C_CCS/GPIO/startup_ccs.c"
+   },
+   {
+      "directory" : "D:/Tiva_C_CCS/GPIO/Debug",
+      "command"   : "clang++ -I\"D:/Tiva_C_CCS/GPIO\" -I\"C:/ti/TivaWare_C_Series-2.2.0.295\" -I\"C:/ti/ti-cgt-arm_18.12.2.LTS/include\" -I\"D:/Tiva_C_CCS/GPIO/Headers\" -I\"D:/Tiva_C_CCS/GPIO/Headers/Det\" -I\"D:/Tiva_C_CCS/GPIO/Headers/DIO\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -xc",
+      "file"      : "D:/Tiva_C_CCS/GPIO/Det/Det.c"
+   }
+]

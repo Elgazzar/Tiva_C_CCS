@@ -1,17 +1,17 @@
 ******************************************************************************
                   TI ARM Linker PC v18.12.2                    
 ******************************************************************************
->> Linked Tue Aug 12 16:41:18 2025
+>> Linked Tue Aug 12 17:21:27 2025
 
 OUTPUT FILE NAME:   <Button_Driver.out>
-ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 00000569
+ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 00000591
 
 
 MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  FLASH                 00000000   00040000  00000614  0003f9ec  R  X
+  FLASH                 00000000   00040000  0000063c  0003f9c4  R  X
   SRAM                  20000000   00008000  00000200  00007e00  RW X
 
 
@@ -19,9 +19,9 @@ SEGMENT ALLOCATION MAP
 
 run origin  load origin   length   init length attrs members
 ----------  ----------- ---------- ----------- ----- -------
-00000000    00000000    00000614   00000614    r-x
+00000000    00000000    0000063c   0000063c    r-x
   00000000    00000000    0000026c   0000026c    r-- .intvecs
-  0000026c    0000026c    000003a8   000003a8    r-x .text
+  0000026c    0000026c    000003d0   000003d0    r-x .text
 20000000    20000000    00000200   00000000    rw-
   20000000    20000000    00000200   00000000    rw- .stack
 
@@ -34,27 +34,27 @@ section   page    origin      length       input sections
 .intvecs   0    00000000    0000026c     
                   00000000    0000026c     startup_ccs.obj (.intvecs)
 
-.text      0    0000026c    000003a8     
+.text      0    0000026c    000003d0     
                   0000026c    0000016c     driverlib.lib : gpio.obj (.text:GPIOPadConfigSet)
-                  000003d8    00000064     main.obj (.text:main)
-                  0000043c    00000060     Switch_Driver.obj (.text:Switch_init)
-                  0000049c    00000038     driverlib.lib : sysctl.obj (.text:SysCtlPeripheralReady)
-                  000004d4    00000034                   : sysctl.obj (.text:SysCtlPeripheralEnable)
-                  00000508    00000034     Switch_Driver.obj (.text:switch2_init)
-                  0000053c    0000002c     driverlib.lib : gpio.obj (.text:GPIODirModeSet)
-                  00000568    0000002c     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.text:_c_int00_noinit_noargs:_c_int00_noinit_noargs)
-                  00000594    0000001a     driverlib.lib : gpio.obj (.text:GPIOPinTypeGPIOOutput)
-                  000005ae    00000002     startup_ccs.obj (.text:FaultISR)
-                  000005b0    00000018     Switch_Driver.obj (.text:Switch0_Read)
-                  000005c8    00000018     Switch_Driver.obj (.text:Switch1_Read)
-                  000005e0    00000016     driverlib.lib : gpio.obj (.text:GPIOPinTypeGPIOInput)
-                  000005f6    00000006                   : gpio.obj (.text:GPIOPinRead)
-                  000005fc    00000006                   : gpio.obj (.text:GPIOPinWrite)
-                  00000602    00000006     startup_ccs.obj (.text:ResetISR)
-                  00000608    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
-                  0000060c    00000004                                   : exit.c.obj (.text:abort:abort)
-                  00000610    00000002     startup_ccs.obj (.text:IntDefaultHandler)
-                  00000612    00000002     startup_ccs.obj (.text:NmiSR)
+                  000003d8    0000008c     main.obj (.text:main)
+                  00000464    00000060     Switch_Driver.obj (.text:Switch_init)
+                  000004c4    00000038     driverlib.lib : sysctl.obj (.text:SysCtlPeripheralReady)
+                  000004fc    00000034                   : sysctl.obj (.text:SysCtlPeripheralEnable)
+                  00000530    00000034     Switch_Driver.obj (.text:switch2_init)
+                  00000564    0000002c     driverlib.lib : gpio.obj (.text:GPIODirModeSet)
+                  00000590    0000002c     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.text:_c_int00_noinit_noargs:_c_int00_noinit_noargs)
+                  000005bc    0000001a     driverlib.lib : gpio.obj (.text:GPIOPinTypeGPIOOutput)
+                  000005d6    00000002     startup_ccs.obj (.text:FaultISR)
+                  000005d8    00000018     Switch_Driver.obj (.text:Switch0_Read)
+                  000005f0    00000018     Switch_Driver.obj (.text:Switch1_Read)
+                  00000608    00000016     driverlib.lib : gpio.obj (.text:GPIOPinTypeGPIOInput)
+                  0000061e    00000006                   : gpio.obj (.text:GPIOPinRead)
+                  00000624    00000006                   : gpio.obj (.text:GPIOPinWrite)
+                  0000062a    00000006     startup_ccs.obj (.text:ResetISR)
+                  00000630    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
+                  00000634    00000004                                   : exit.c.obj (.text:abort:abort)
+                  00000638    00000002     startup_ccs.obj (.text:IntDefaultHandler)
+                  0000063a    00000002     startup_ccs.obj (.text:NmiSR)
 
 .cinit     0    00000000    00000000     UNINITIALIZED
 
@@ -73,9 +73,9 @@ MODULE SUMMARY
        ------                ----   -------   -------
     .\
        startup_ccs.obj       12     620       0      
-       main.obj              100    0         0      
+       main.obj              140    0         0      
     +--+---------------------+------+---------+---------+
-       Total:                112    620       0      
+       Total:                152    620       0      
                                                      
     .\Switch_Driver\src\
        Switch_Driver.obj     196    0         0      
@@ -97,26 +97,26 @@ MODULE SUMMARY
                                                      
        Stack:                0      0         512    
     +--+---------------------+------+---------+---------+
-       Grand Total:          936    620       512    
+       Grand Total:          976    620       512    
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
 
 address   name                  
 -------   ----                  
-0000060d  C$$EXIT               
-0000053d  GPIODirModeSet        
+00000635  C$$EXIT               
+00000565  GPIODirModeSet        
 0000026d  GPIOPadConfigSet      
-000005f7  GPIOPinRead           
-000005e1  GPIOPinTypeGPIOInput  
-00000595  GPIOPinTypeGPIOOutput 
-000005fd  GPIOPinWrite          
-00000603  ResetISR              
-000005b1  Switch0_Read          
-000005c9  Switch1_Read          
-0000043d  Switch_init           
-000004d5  SysCtlPeripheralEnable
-0000049d  SysCtlPeripheralReady 
+0000061f  GPIOPinRead           
+00000609  GPIOPinTypeGPIOInput  
+000005bd  GPIOPinTypeGPIOOutput 
+00000625  GPIOPinWrite          
+0000062b  ResetISR              
+000005d9  Switch0_Read          
+000005f1  Switch1_Read          
+00000465  Switch_init           
+000004fd  SysCtlPeripheralEnable
+000004c5  SysCtlPeripheralReady 
 20000200  __STACK_END           
 00000200  __STACK_SIZE          
 20000200  __STACK_TOP           
@@ -128,13 +128,13 @@ ffffffff  __binit__
 ffffffff  __c_args__            
 UNDEFED   __mpu_init            
 20000000  __stack               
-00000569  _c_int00_noinit_noargs
-00000609  _system_pre_init      
-0000060d  abort                 
+00000591  _c_int00_noinit_noargs
+00000631  _system_pre_init      
+00000635  abort                 
 ffffffff  binit                 
 00000000  g_pfnVectors          
 000003d9  main                  
-00000509  switch2_init          
+00000531  switch2_init          
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -146,22 +146,22 @@ address   name
 00000200  __STACK_SIZE          
 0000026d  GPIOPadConfigSet      
 000003d9  main                  
-0000043d  Switch_init           
-0000049d  SysCtlPeripheralReady 
-000004d5  SysCtlPeripheralEnable
-00000509  switch2_init          
-0000053d  GPIODirModeSet        
-00000569  _c_int00_noinit_noargs
-00000595  GPIOPinTypeGPIOOutput 
-000005b1  Switch0_Read          
-000005c9  Switch1_Read          
-000005e1  GPIOPinTypeGPIOInput  
-000005f7  GPIOPinRead           
-000005fd  GPIOPinWrite          
-00000603  ResetISR              
-00000609  _system_pre_init      
-0000060d  C$$EXIT               
-0000060d  abort                 
+00000465  Switch_init           
+000004c5  SysCtlPeripheralReady 
+000004fd  SysCtlPeripheralEnable
+00000531  switch2_init          
+00000565  GPIODirModeSet        
+00000591  _c_int00_noinit_noargs
+000005bd  GPIOPinTypeGPIOOutput 
+000005d9  Switch0_Read          
+000005f1  Switch1_Read          
+00000609  GPIOPinTypeGPIOInput  
+0000061f  GPIOPinRead           
+00000625  GPIOPinWrite          
+0000062b  ResetISR              
+00000631  _system_pre_init      
+00000635  C$$EXIT               
+00000635  abort                 
 20000000  __stack               
 20000200  __STACK_END           
 20000200  __STACK_TOP           

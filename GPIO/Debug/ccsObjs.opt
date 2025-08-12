@@ -1,0 +1,9 @@
+"./main.obj"
+"./startup_ccs.obj"
+"./DIO/DIO.obj"
+"./DIO/Dio_Lcfg.obj"
+"./Det/Det.obj"
+"./Switch_Driver/src/Switch_Driver.obj"
+"../Button_Driver_ccs.cmd"
+-l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib"
+-llibc.a

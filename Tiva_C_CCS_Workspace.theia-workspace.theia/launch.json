@@ -19,7 +19,7 @@
                 "resourceId": "/Button_Driver"
             }
         },
-        {
+		{
             "name": "GPIO",
             "type": "ccs-debug",
             "request": "launch",
