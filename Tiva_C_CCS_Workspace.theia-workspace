@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": "blinky"
+    }
+  ],
+  "settings": {},
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "blinky",
+        "type": "ccs-debug",
+        "request": "launch",
+        "projectInfo": {
+          "name": "blinky",
+          "resourceId": "/blinky"
+        }
+      }
+    ]
+  }
+}
