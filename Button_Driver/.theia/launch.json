@@ -2,15 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "blinky",
-            "type": "ccs-debug",
-            "request": "launch",
-            "projectInfo": {
-                "name": "blinky",
-                "resourceId": "/blinky"
-            }
-        },
-        {
             "name": "Button_Driver",
             "type": "ccs-debug",
             "request": "launch",

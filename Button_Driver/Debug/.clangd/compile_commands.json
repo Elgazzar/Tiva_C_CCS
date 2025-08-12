@@ -1,0 +1,17 @@
+[
+   {
+      "directory" : "D:/Tiva_C_CCS/Button_Driver/Debug",
+      "command"   : "clang++ -I\"D:/Tiva_C_CCS/Button_Driver\" -I\"C:/ti/TivaWare_C_Series-2.2.0.295\" -I\"C:/ti/ti-cgt-arm_18.12.2.LTS/include\" -I\"D:/Tiva_C_CCS/Button_Driver/Headers\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -xc",
+      "file"      : "D:/Tiva_C_CCS/Button_Driver/main.c"
+   },
+   {
+      "directory" : "D:/Tiva_C_CCS/Button_Driver/Debug",
+      "command"   : "clang++ -I\"D:/Tiva_C_CCS/Button_Driver\" -I\"C:/ti/TivaWare_C_Series-2.2.0.295\" -I\"C:/ti/ti-cgt-arm_18.12.2.LTS/include\" -I\"D:/Tiva_C_CCS/Button_Driver/Headers\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -xc",
+      "file"      : "D:/Tiva_C_CCS/Button_Driver/startup_ccs.c"
+   },
+   {
+      "directory" : "D:/Tiva_C_CCS/Button_Driver/Debug",
+      "command"   : "clang++ -I\"D:/Tiva_C_CCS/Button_Driver\" -I\"C:/ti/TivaWare_C_Series-2.2.0.295\" -I\"C:/ti/ti-cgt-arm_18.12.2.LTS/include\" -I\"D:/Tiva_C_CCS/Button_Driver/Headers\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -xc",
+      "file"      : "D:/Tiva_C_CCS/Button_Driver/Switch_Driver/src/Switch_Driver.c"
+   }
+]
