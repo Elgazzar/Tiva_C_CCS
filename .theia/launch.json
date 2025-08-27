@@ -27,6 +27,15 @@
                 "name": "GPIO",
                 "resourceId": "/GPIO"
             }
+        },
+        {
+            "name": "ADC",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ADC",
+                "resourceId": "/ADC"
+            }
         }
     ]
 }
